@@ -19,7 +19,6 @@ class EmpleadoController extends Controller
     public $dataEmpleados = array();
     public function index()
     {
-
         $empleados = Empleado::orderBy('id', 'asc')->get();
         foreach ($empleados as $empleado) {
             if ($empleado->image) {
